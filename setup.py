@@ -1,6 +1,11 @@
 import re
 import ast
+import sys
 from setuptools import setup
+
+if sys.version_info < (3, 0):
+    sys.stderr.write('ERROR: spotify-downloader requires Python 3.0 or later')
+    sys.exit(1)
 
 with open('README.md', 'r') as f:
     long_description = f.read()
