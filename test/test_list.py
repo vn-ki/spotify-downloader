@@ -1,7 +1,7 @@
-from core import spotify_tools
-from core import const
+from spotify_downloader.core import spotify_tools
+from spotify_downloader.core import const
 
-import spotdl
+import spotify_downloader.spotdl as spotdl
 
 import builtins
 import os

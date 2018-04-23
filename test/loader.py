@@ -1,6 +1,6 @@
-from core import const
-from core import handle
-import spotdl
+from spotify_downloader.core import const
+from spotify_downloader.core import handle
+import spotify_downloader.spotdl as spotdl
 import pytest
 
 

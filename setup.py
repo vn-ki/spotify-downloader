@@ -1,7 +1,7 @@
 import re
 import ast
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open('README.md', 'r') as f:
     long_description = f.read()
@@ -13,7 +13,7 @@ with open('README.md', 'r') as f:
 
 _version_re = re.compile(r'__version__\s+=\s+(.*)')
 
-with open('spotdl.py', 'r') as f:
+with open('spotify_downloader/spotdl.py', 'r') as f:
     version = str(ast.literal_eval(_version_re.search(f.read()).group(1)))
 
 setup(
@@ -22,7 +22,7 @@ setup(
     py_modules=['spotdl'],
     # Tests are included automatically:
     # https://docs.python.org/3.6/distutils/sourcedist.html#specifying-the-files-to-distribute
-    packages=['core'],
+    packages=find_packages(),
     version=version,
     install_requires=[
         'pathlib >= 1.0.1',
@@ -63,7 +63,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'spotdl = spotdl:main',
+            'spotdl = spotify_downloader.spotdl:main',
         ],
     }
 )

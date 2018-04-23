@@ -1,7 +1,7 @@
 import os
 import sys
 
-from core import const
+from . import const
 
 log = const.log
 

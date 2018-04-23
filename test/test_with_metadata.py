@@ -1,12 +1,12 @@
 
-from core import const
-from core import internals
-from core import spotify_tools
-from core import youtube_tools
-from core import convert
-from core import metadata
+from spotify_downloader.core import const
+from spotify_downloader.core import internals
+from spotify_downloader.core import spotify_tools
+from spotify_downloader.core import youtube_tools
+from spotify_downloader.core import convert
+from spotify_downloader.core import metadata
 
-import spotdl
+import spotify_downloader.spotdl as spotdl
 
 import loader
 import os

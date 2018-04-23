@@ -1,7 +1,7 @@
 import yaml
 
-from core import handle
-from core import const
+from spotify_downloader.core import handle
+from spotify_downloader.core import const
 
 import pytest
 import os

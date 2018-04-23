@@ -1,4 +1,4 @@
-from core import internals
+from spotify_downloader.core import internals
 
 import sys
 import os

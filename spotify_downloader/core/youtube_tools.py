@@ -2,8 +2,8 @@ from bs4 import BeautifulSoup
 import urllib
 import pafy
 
-from core import internals
-from core import const
+from . import internals
+from . import const
 
 import os
 import pprint

@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
-from core import const
-from core import handle
-from core import metadata
-from core import convert
-from core import internals
-from core import spotify_tools
-from core import youtube_tools
+from .core import const
+from .core import handle
+from .core import metadata
+from .core import convert
+from .core import internals
+from .core import spotify_tools
+from .core import youtube_tools
 from slugify import slugify
 import spotipy
 import urllib.request
